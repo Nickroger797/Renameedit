@@ -36,7 +36,7 @@ class mr(object):
     ABOUT_TXT = """
 ╭───────────⍟
 ├🪄 The Name is : {}
-├🥷 ADMIN-TG : <a href=https://t.me/Codexownerr>LazyDeveloper</a> 
+├🥷 ADMIN-TG : <a href=https://t.me/Codexownerr>Codexfounder</a> 
 ├🪩 Instagram : <a href=https://www.instagram.com/codexbots>C-Insta</a> 
 ├📕 LIBRARY : <a href=https://github.com/pyrogram>Pyrogram</a>
 ├✏️ LANGUAGE : <a href=https://www.python.org>Python 3</a>
