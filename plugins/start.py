@@ -16,9 +16,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-Telegram Link : https://t.me/LazyDeveloper 
-Repo Link : https://github.com/LazyDeveloperr/Gangster-Baby-Renamer-BOT
-License Link : https://github.com/LazyDeveloperr/Gangster-Baby-Renamer-BOT/blob/main/LICENSE
+Telegram Link : https://t.me/codexbotmaker 
+Repo Link : https://github.com/Nickroger797/Renameedit
+License Link : https://github.com/Nickroger797/Renameedit-BOT/blob/main/LICENSE
 """
 
 from asyncio import sleep
@@ -37,24 +37,24 @@ async def start(client, message):
     user = message.from_user
     if not await db.is_user_exist(user.id):
         await db.add_user(user.id)             
-    txt=f"👋 Hello Developer {user.mention} \n\nI am an Advance file Renamer and file Converter BOT with permanent and custom thumbnail support.\n\nSend me any video or document !"
+    txt=f"🌐 Hey Developer {user.mention} \n\n📁 I am an Advance file Renamer and file Converter BOT with permanent and custom thumbnail support ✅ .\n\n👉 Send me any video or document for rename🖋️!"
     button=InlineKeyboardMarkup([[
-        InlineKeyboardButton("😈 Developer 😈", callback_data='dev')
+        InlineKeyboardButton("🔮 Developer 🔮", callback_data='dev')
         ],[
-        InlineKeyboardButton('📢 Updates', url='https://t.me/LazyDeveloper'),
-        InlineKeyboardButton('🤝 Support', url='https://t.me/LazyPrincessSupport')
+        InlineKeyboardButton('🤖 Bots Updates', url='https://t.me/codexbotmaker'),
+        InlineKeyboardButton('🙌 Discussion', url='https://t.me/codexdisscus')
         ],[
-        InlineKeyboardButton('⚡️ About', callback_data='about'),
-        InlineKeyboardButton('🤕 Help', callback_data='help')
+        InlineKeyboardButton('✨ About', callback_data='about'),
+        InlineKeyboardButton('🦾 Help', callback_data='help')
         ],[
-        InlineKeyboardButton("🙋🏻 How to make this BOT ? ", url='https://www.youtube.com/channel/UCY-iDra0x2hdd9PdHKcZkRw')
+        InlineKeyboardButton("🫢 Suprise 🫢 ", url='https://t.me/codexbotmaker')
         ],[
-        InlineKeyboardButton("🎬 Join Our Movie Channel !", url='https://t.me/real_MoviesAdda6')
+        InlineKeyboardButton("🍿 Join Our Movies Group !", url='https://t.me/codexmoviesgroup')
         ],[
-        InlineKeyboardButton("❤️ Subscribe YT ❤️", url='https://www.youtube.com/channel/UCY-iDra0x2hdd9PdHKcZkRw')
+        InlineKeyboardButton("❤️ insta ❤️", url='https://www.instagram.com/codexbots?igsh=MXVydGJ0YW0xMmk4cw==')
         ],[
-        InlineKeyboardButton("📝Admin-TG", url='https://t.me/LazyDeveloperr'),
-        InlineKeyboardButton("📝Admin-Channel", url='https://t.me/LazyDeveloper')
+        InlineKeyboardButton("☄️Admin-TG", url='https://t.me/Codexownerr'),
+        InlineKeyboardButton("🧊Admin-Channel", url='https://t.me/codexbotmaker')
         ]
         ])
     if START_PIC:
@@ -78,15 +78,15 @@ async def rename_start(client, message):
     fileid = file.file_id
     try:
         text = f"""**__What do you want me to do with this file.?__**\n\n**File Name** :- `{filename}`\n\n**File Size** :- `{filesize}`"""
-        buttons = [[ InlineKeyboardButton("📝 𝚂𝚃𝙰𝚁𝚃 𝚁𝙴𝙽𝙰𝙼𝙴 📝", callback_data="rename") ],
-                   [ InlineKeyboardButton("✖️ 𝙲𝙰𝙽𝙲𝙴𝙻 ✖️", callback_data="cancel") ]]
+        buttons = [[ InlineKeyboardButton("🖊️ 𝚂𝚃𝙰𝚁𝚃 𝚁𝙴𝙽𝙰𝙼𝙴 🖊️", callback_data="rename") ],
+                   [ InlineKeyboardButton("🧯 𝙲𝙰𝙽𝙲𝙴𝙻 🧯", callback_data="cancel") ]]
         await message.reply_text(text=text, reply_to_message_id=message.id, reply_markup=InlineKeyboardMarkup(buttons))
         await sleep(FLOOD)
     except FloodWait as e:
         await sleep(e.value)
         text = f"""**__What do you want me to do with this file.?__**\n\n**File Name** :- `{filename}`\n\n**File Size** :- `{filesize}`"""
-        buttons = [[ InlineKeyboardButton("📝 𝚂𝚃𝙰𝚁𝚃 𝚁𝙴𝙽𝙰𝙼𝙴 📝", callback_data="rename") ],
-                   [ InlineKeyboardButton("✖️ 𝙲𝙰𝙽𝙲𝙴𝙻 ✖️", callback_data="cancel") ]]
+        buttons = [[ InlineKeyboardButton("🖊️ 𝚂𝚃𝙰𝚁𝚃 𝚁𝙴𝙽𝙰𝙼𝙴 🖊️", callback_data="rename") ],
+                   [ InlineKeyboardButton("🧯 𝙲𝙰𝙽𝙲𝙴𝙻 🧯", callback_data="cancel") ]]
         await message.reply_text(text=text, reply_to_message_id=message.id, reply_markup=InlineKeyboardMarkup(buttons))
     except:
         pass
@@ -96,24 +96,24 @@ async def cb_handler(client, query: CallbackQuery):
     data = query.data 
     if data == "start":
         await query.message.edit_text(
-            text=f"""👋 Hello Developer {query.from_user.mention} \n\nI am an Advance file Renamer and file Converter BOT with permanent and custom thumbnail support.\n\nSend me any video or document !""",
+            text=f"""🌐 Hey Developer {query.from_user.mention} \n\n📁I am an Advance file Renamer and file Converter BOT with permanent and custom thumbnail support ✅ .\n\n👉 Send me any video or document for rename 🖋️!""",
             reply_markup=InlineKeyboardMarkup( [[
-        InlineKeyboardButton("😈 Developer 😈", callback_data='dev')
+        InlineKeyboardButton("🔮 Developer 🔮", callback_data='dev')
         ],[
-        InlineKeyboardButton('📢 Updates', url='https://t.me/LazyDeveloper'),
-        InlineKeyboardButton('🤝 Support', url='https://t.me/LazyPrincessSupport')
+        InlineKeyboardButton('🤖 Bots Updates', url='https://t.me/codexbotmaker'),
+        InlineKeyboardButton('🙌 Discussion', url='https://t.me/codexdisscus')
         ],[
-        InlineKeyboardButton('⚡️ About', callback_data='about'),
-        InlineKeyboardButton('🤕 Help', callback_data='help')
+        InlineKeyboardButton('✨ About', callback_data='about'),
+        InlineKeyboardButton('🦾 Help', callback_data='help')
         ],[
-        InlineKeyboardButton("🙋🏻 How to make this BOT ? ", url='https://www.youtube.com/channel/UCY-iDra0x2hdd9PdHKcZkRw')
+        InlineKeyboardButton("🫢 Surprise 🫢 ", url='https://t.me/codexbotmaker')
         ],[
-        InlineKeyboardButton("🎬 Join Our Movie Channel !", url='https://t.me/real_MoviesAdda6')
+        InlineKeyboardButton("🍿 Join Our Movie Group !", url='https://t.me/codexmoviesgroup')
         ],[
-        InlineKeyboardButton("❤️ Subscribe YT ❤️", url='https://www.youtube.com/channel/UCY-iDra0x2hdd9PdHKcZkRw')
+        InlineKeyboardButton("❤️ insta ❤️", url='https://www.instagram.com/codexbots?igsh=MXVydGJ0YW0xMmk4cw==')
         ],[
-        InlineKeyboardButton("📝Admin-TG", url='https://t.me/LazyDeveloperr'),
-        InlineKeyboardButton("📝Admin-Channel", url='https://t.me/LazyDeveloper')
+        InlineKeyboardButton("☄️Admin-TG", url='https://t.me/Codexownerr'),
+        InlineKeyboardButton("🧊Admin-Channel", url='https://t.me/codexbotmaker')
         ]
         ]
                 )
@@ -123,11 +123,11 @@ async def cb_handler(client, query: CallbackQuery):
             text=mr.HELP_TXT,
             reply_markup=InlineKeyboardMarkup( [[
                #⚠️ don't change source code & source link ⚠️ #
-               InlineKeyboardButton("❣️ Contact Admin ❣️", url="https://t.me/LazyDeveloperr")
+               InlineKeyboardButton("❣️ Contact Admin ❣️", url="https://t.me/Codexownerr")
                ],[
-               InlineKeyboardButton("❤️‍🔥 How to use me ? ❤️‍🔥", url='https://www.youtube.com/channel/UCY-iDra0x2hdd9PdHKcZkRw')
+               InlineKeyboardButton("🤔 How to use me ? 🤔", url='https://t.me/Codexownerr')
                ],[
-               InlineKeyboardButton("🎬 Join our Movie Channel 🎬", url="https://t.me/real_MoviesAdda6")
+               InlineKeyboardButton("🍿 Join our Movie Channel 🍿", url="https://t.me/codexmoviehere")
                ],[
                InlineKeyboardButton("🔒 𝙲𝙻𝙾𝚂𝙴", callback_data = "close"),
                InlineKeyboardButton("◀️ 𝙱𝙰𝙲𝙺", callback_data = "start")
@@ -140,11 +140,11 @@ async def cb_handler(client, query: CallbackQuery):
             disable_web_page_preview = True,
             reply_markup=InlineKeyboardMarkup( [[
                #⚠️ don't change source code & source link ⚠️ #
-               InlineKeyboardButton("❣️ Developer ❣️", url="https://t.me/lazyDeveloperr")
+               InlineKeyboardButton("❣️ Developer ❣️", url="https://t.me/Codexownerr")
                ],[
-               InlineKeyboardButton("❤️‍🔥 How to make me ? ❤️‍🔥", url='https://www.youtube.com/channel/UCY-iDra0x2hdd9PdHKcZkRw')
+               InlineKeyboardButton("🤔 How to make me ? 🤔", url='https://t.me/Codexownerr')
                ],[
-                InlineKeyboardButton("🎬 Join our Movie Channel 🎬", url="https://t.me/real_MoviesAdda6")
+                InlineKeyboardButton("🍿 Join our Movie Channel 🍿", url="https://t.me/codexmoviehere")
                ],[
                InlineKeyboardButton("🔒 𝙲𝙻𝙾𝚂𝙴", callback_data = "close"),
                InlineKeyboardButton("◀️ 𝙱𝙰𝙲𝙺", callback_data = "start")
@@ -156,11 +156,11 @@ async def cb_handler(client, query: CallbackQuery):
             text=mr.DEV_TXT,
             reply_markup=InlineKeyboardMarkup( [[
                #⚠️ don't change source code & source link ⚠️ #
-               InlineKeyboardButton("❣️ Developer ❣️", url="https://t.me/LazyDeveloperr")
+               InlineKeyboardButton("❣️ Developer ❣️", url="https://t.me/Codexownerr")
                ],[
-               InlineKeyboardButton("❤️‍🔥 How to make me ? ❤️‍🔥", url='https://www.youtube.com/channel/UCY-iDra0x2hdd9PdHKcZkRw')
+               InlineKeyboardButton("🤔 How to make me ? 🤔", url='https://t.me/Codexownerr')
                ],[
-                InlineKeyboardButton("🎬 Join our Movie Channel 🎬", url="https://t.me/real_MoviesAdda6")
+                InlineKeyboardButton("🍿 Join our Movie Channel 🍿", url="https://t.me/codexmoviehere")
                ],[
                InlineKeyboardButton("🔒 𝙲𝙻𝙾𝚂𝙴", callback_data = "close"),
                InlineKeyboardButton("◀️ 𝙱𝙰𝙲𝙺", callback_data = "start")
