@@ -51,7 +51,7 @@ async def start(client, message):
         ],[
         InlineKeyboardButton("🍿 Join Our Movies Group !", url='https://t.me/codexmoviesgroup')
         ],[
-        InlineKeyboardButton("❤️ insta ❤️", url='https://www.instagram.com/codexbots?igsh=MXVydGJ0YW0xMmk4cw==')
+        InlineKeyboardButton("❤️ insta ❤️", url='https://www.instagram.com/codexbots')
         ],[
         InlineKeyboardButton("☄️Admin-TG", url='https://t.me/Codexownerr'),
         InlineKeyboardButton("🧊Admin-Channel", url='https://t.me/codexbotmaker')
@@ -110,7 +110,7 @@ async def cb_handler(client, query: CallbackQuery):
         ],[
         InlineKeyboardButton("🍿 Join Our Movie Group !", url='https://t.me/codexmoviesgroup')
         ],[
-        InlineKeyboardButton("❤️ insta ❤️", url='https://www.instagram.com/codexbots?igsh=MXVydGJ0YW0xMmk4cw==')
+        InlineKeyboardButton("❤️ insta ❤️", url='https://www.instagram.com/codexbots')
         ],[
         InlineKeyboardButton("☄️Admin-TG", url='https://t.me/Codexownerr'),
         InlineKeyboardButton("🧊Admin-Channel", url='https://t.me/codexbotmaker')
